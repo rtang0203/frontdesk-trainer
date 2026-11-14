@@ -1,0 +1,25 @@
+user: Thank you for calling glow Glow MedSpa. This is Randy. How can I help you? 
+agent: Hi, I was just calling to see how much you charge for Botox?
+user: Yeah. Sure. I'm happy to help with that. Have you had Botox before? 
+agent: Yeah, once, about six months ago somewhere else.
+user: How did that go for you? 
+agent: Honestly, not great. It wore off pretty fast.
+user: Okay. Sorry to hear that. What areas are you looking to treat? 
+agent: Forehead lines and crow's feet. So, um, what's the price?
+user: We do thirteen dollars a unit. The exact amount for the whole procedure is something our injector decides with you at the consultation. Um, the consultation is free. 
+agent: Hm, that's more than I was quoted. Another place said eleven a unit. Can you match that, or do some kind of discount?
+user: Yeah. I hear you. Um, we don't price match, unfortunately. Honestly, it's because of who does the injections. Our nurse injector has been doing this for ten years. She takes the time to really get the dosing right so that results last a long time. Since yes. 
+agent: Hm, okay. Not even for a first-time client? I mean, the lasting longer part does matter, since mine wore off so fast.
+user: Yeah. So, our pricing is the same for everybody, but we have a membership that takes a dollar off every unit and includes a monthly facial. A lot of our regular clients, use it lot. 
+agent: Oh, okay, that's kind of interesting. How much is the membership a month?
+user: It's a hundred dollars a month. 
+agent: Hm, a hundred a month. I'd probably have to think about that part.
+user: Okay. What about the consultation then? 
+agent: Yeah, okay, I'll do the free consult. Do you have anything early next week, like Tuesday afternoon?
+user: Yes. Absolutely. 
+user: Tuesday afternoon, I have two PM or four PM. Which works better for you? 
+agent: Two works.
+user: Okay. Awesome. What's your name, miss? Can I get your name and a number? 
+agent: It's Jessica, and my number's 555-382-1947.
+user: Okay. Awesome. You, Jessica. I will see you at Tuesday, two PM then. 
+agent: Okay, Tuesday at two. Thanks, bye.

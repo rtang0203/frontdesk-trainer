@@ -1,0 +1,10 @@
+user: Thanks for calling GloMedSpa. This is Randy. 
+agent: Hi, I was just calling to see how much you charge for Botox?
+user: Sure. Botox we do for thirteen dollars a unit. 
+agent: Hm, that's more than I was quoted. Another place said eleven a unit. Can you match that, or do some kind of discount?
+user: Sorry. We don't we don't do discounts. Our nurse injector is very experienced, though, People our clients really seem to love her. 
+agent: Not even for a first-time client? I mean, "people love her" is kind of what everyone says. What actually makes her different?
+user: Yeah. Unfortunately, that's our price. Um, I mean, you can go online and check the Google reviews if you like. 
+agent: Hm, okay. Thanks, I'll think about it.
+user: Sure. Just let us know if you'd like to book. 
+agent: Okay, bye.

@@ -1,0 +1,8 @@
+user: Hello? Hang on a sec. Okay. Go ahead. 
+agent: Hi, I was just calling to see how much you charge for Botox?
+user: It's, like, thirteen dollars a unit, I think. 
+agent: Hm, you think? Another place quoted me less than that. Can you match it, or do you have any kind of discount?
+user: Yeah. I could probably do, like, ten percent off. 
+agent: Okay, ten percent helps a little. Thanks, I'll think about it.
+user: Okay. Well, call back if you wanna come in. 
+agent: Yeah, okay. Thanks, bye.

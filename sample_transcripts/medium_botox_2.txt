@@ -1,0 +1,15 @@
+user: Thanks for calling Glow Med Spa. This is Randy. 
+agent: Hi, I was just calling to see how much you charge for Botox?
+user: Yeah. So we do Botox for thirteen dollars a unit. 
+agent: Hm, okay. Another place quoted me eleven a unit. Can you match that, or do any kind of discount?
+user: Sorry. We don't do discounts. Our injector is very experienced, though. Um, all of our clients love her. 
+agent: Not even for a first-time client? I mean, everyone says their clients love them. What makes her different?
+user: I mean, he she has ten years of experience. Licensed nurse practitioner. Um, you can look on online for the Google reviews if you wanna see. 
+agent: Hm, okay. Ten years is decent, I guess. So how many units do people usually need for forehead and crow's feet?
+user: Good question. Um, I'd have to well, I would I'd have to consult the staff for that. Do you want to come in for a consultation? 
+agent: Yeah, I guess a consult makes sense. Do you have anything early next week, like Monday or Tuesday afternoon?
+user: Yeah. Alright. Monday, I have one o'clock at two thirty, and then Tuesday, I have three o'clock. Available. 
+agent: Monday at two thirty works. Name's Jessica.
+user: Nice to meet you, Jessica. 
+user: Okay. Could I get a phone number? 
+agent: Actually, I'll call back to confirm that. Thanks, bye.

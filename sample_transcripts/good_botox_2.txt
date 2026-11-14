@@ -1,0 +1,18 @@
+user: Thank you for calling Glow Med Spa. This is Randy. How can I help you? 
+agent: Hi, I was just calling to see how much you charge for Botox?
+user: Sure. Happy to help with that. Have you had Botox before? 
+agent: Yeah, once. About six months ago at another place. So, um, what's the price?
+user: We we do thirteen dollars a unit. Um, the exact amount for the whole procedure is something that our disc injector decides with you at the consult, and the consultation is free. How how did your previous Botox appointment go for you? 
+agent: Honestly, kind of meh. It wore off pretty fast, and I wasn't sure the injector really knew what they were doing. But, um, another place quoted me a bit less per unit. Can you match that, or do any kind of discount?
+user: Okay. I hear you. We we don't we don't price match. Um, honestly, it's of who does our injections. Our nurse injector has done this for ten years and takes the time to get the dosing right so results last. And so your last round wore off fast. That was what I would want for you. 
+agent: Hm. Ten years is good to hear, I guess. Not even a little something for a first-time client?
+user: Our pricing is the same for everybody, but we do have a membership which takes a dollar off every every unit and includes a monthly facial along with A lot of our regulars use it. 
+agent: Okay, fine on the price. The membership's kind of interesting though. How much is it a month, and is there a contract?
+user: Um, Yeah. The the membership would be fifty dollars a month. Um, it's no contract. You can you can cancel anytime. 
+agent: Hm, okay, no contract's good. Honestly, the ten-year injector thing matters more to me than the price. Can I just book the free consult? Sometime next week would work. I'm Jessica.
+user: Hi, Jessica. Yeah. Absolutely. So, if you want to next week, I have Monday at two. Or two PM or Tuesday at ten AM. Which works better for you? 
+agent: Monday at two works.
+user: Okay. Awesome. Jessica, do you have a phone number? That I can reach you at? 
+agent: Yeah, it's 555-382-1947.
+user: Okay. Give me a second. Okay. Um, okay. Thank you. I will see you next week, Monday at two then. 
+agent: Okay, Monday at two. Thanks, Randy. Bye.
