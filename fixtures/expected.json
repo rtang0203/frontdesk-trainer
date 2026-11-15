@@ -1,0 +1,52 @@
+{
+  "good_botox_1": {
+    "greeting": "pass",
+    "discovery": "pass",
+    "accurate_info": "fail",
+    "held_price": "pass",
+    "value": "pass",
+    "offered_time": "pass",
+    "booked": "pass",
+    "confirmed": "pass"
+  },
+  "good_botox_2": {
+    "greeting": "pass",
+    "discovery": "pass",
+    "accurate_info": "pass",
+    "held_price": "pass",
+    "value": "pass",
+    "offered_time": "pass",
+    "booked": "pass",
+    "confirmed": "pass"
+  },
+  "medium_botox_1": {
+    "greeting": "pass",
+    "discovery": "fail",
+    "accurate_info": "pass",
+    "held_price": "pass",
+    "value": "fail",
+    "offered_time": "fail",
+    "booked": "fail",
+    "confirmed": "not_applicable"
+  },
+  "medium_botox_2": {
+    "greeting": "pass",
+    "discovery": "fail",
+    "accurate_info": "pass",
+    "held_price": "pass",
+    "value": "pass",
+    "offered_time": "pass",
+    "booked": "pass",
+    "confirmed": "fail"
+  },
+  "bad_botox_1": {
+    "greeting": "fail",
+    "discovery": "fail",
+    "accurate_info": "fail",
+    "held_price": "fail",
+    "value": "fail",
+    "offered_time": "fail",
+    "booked": "fail",
+    "confirmed": "not_applicable"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "call": {
+    "call_id": "call_ba76d955978dd6dad7947d2a53b",
+    "latency": {},
+    "agent_id": "agent_024251ac761abc082404386d93",
+    "call_cost": {
+      "combined_cost": 3.145,
+      "product_costs": [
+        {
+          "cost": 0.2750001,
+          "product": "retell_voice_engine",
+          "unit_price": 0.0916667
+        },
+        {
+          "cost": 0.075,
+          "product": "cartesia_tts_new",
+          "unit_price": 0.025
+        },
+        {
+          "cost": 0.6399999,
+          "product": "claude_5_5_opus",
+          "unit_price": 0.2133333
+        },
+        {
+          "cost": 0.075,
+          "product": "us_twilio_telephony",
+          "unit_price": 0.025
+        },
+        {
+          "cost": 2.08,
+          "product": "gpt_5_6_terra_text_testing",
+          "unit_price": 2.08
+        }
+      ],
+      "total_duration_seconds": 3,
+      "total_duration_unit_price": 0.355
+    },
+    "call_type": "phone_call",
+    "direction": "outbound",
+    "to_number": "•••• 2746",
+    "agent_name": "Med Spa Front Desk Trainer - Jessica",
+    "tool_calls": [],
+    "transcript": "User: Your call has been forwarded to voice mail. \n",
+    "call_status": "ended",
+    "duration_ms": 2686,
+    "from_number": "•••• 5067",
+    "agent_version": 0,
+    "end_timestamp": 1794704840208,
+    "recording_url": "REDACTED_URL",
+    "public_log_url": "REDACTED_URL",
+    "start_timestamp": 1794704837522,
+    "opt_in_signed_url": false,
+    "transcript_object": [
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 0.80899995,
+            "word": "Your ",
+            "start": 0.489
+          },
+          {
+            "end": 1.049,
+            "word": "call ",
+            "start": 0.80899995
+          },
+          {
+            "end": 1.369,
+            "word": "has ",
+            "start": 1.049
+          },
+          {
+            "end": 1.529,
+            "word": "been ",
+            "start": 1.369
+          },
+          {
+            "end": 1.9289999999999998,
+            "word": "forwarded ",
+            "start": 1.529
+          },
+          {
+            "end": 2.089,
+            "word": "to ",
+            "start": 1.9289999999999998
+          },
+          {
+            "end": 2.3289999999999997,
+            "word": "voice ",
+            "start": 2.089
+          },
+          {
+            "end": 2.489,
+            "word": "mail. ",
+            "start": 2.3289999999999997
+          }
+        ],
+        "content": "Your call has been forwarded to voice mail. "
+      }
+    ],
+    "custom_sip_headers": {},
+    "data_storage_setting": "everything",
+    "disconnection_reason": "voicemail_reached",
+    "telephony_identifier": {
+      "twilio_call_sid": "REDACTED_SID"
+    },
+    "contact_dynamic_variables": {},
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 0.80899995,
+            "word": "Your ",
+            "start": 0.489
+          },
+          {
+            "end": 1.049,
+            "word": "call ",
+            "start": 0.80899995
+          },
+          {
+            "end": 1.369,
+            "word": "has ",
+            "start": 1.049
+          },
+          {
+            "end": 1.529,
+            "word": "been ",
+            "start": 1.369
+          },
+          {
+            "end": 1.9289999999999998,
+            "word": "forwarded ",
+            "start": 1.529
+          },
+          {
+            "end": 2.089,
+            "word": "to ",
+            "start": 1.9289999999999998
+          },
+          {
+            "end": 2.3289999999999997,
+            "word": "voice ",
+            "start": 2.089
+          },
+          {
+            "end": 2.489,
+            "word": "mail. ",
+            "start": 2.3289999999999997
+          }
+        ],
+        "content": "Your call has been forwarded to voice mail. "
+      }
+    ],
+    "recording_multi_channel_url": "REDACTED_URL"
+  },
+  "event": "call_ended",
+  "event_timestamp": 1794704840208
+}

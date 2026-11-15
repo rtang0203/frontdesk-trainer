@@ -1,0 +1,3106 @@
+{
+  "call": {
+    "call_id": "call_0ae03ba36a1149040a425809f7f",
+    "latency": {
+      "asr": {
+        "max": 211,
+        "min": 0,
+        "num": 9,
+        "p50": 127,
+        "p90": 191.79999999999998,
+        "p95": 201.39999999999998,
+        "p99": 209.07999999999998,
+        "sum": 1081,
+        "values": [
+          71,
+          0,
+          185,
+          119,
+          0,
+          187,
+          181,
+          211,
+          127
+        ]
+      },
+      "e2e": {
+        "max": 2981,
+        "min": 968,
+        "num": 9,
+        "p50": 1529.0029296875,
+        "p90": 2296.1999999999994,
+        "p95": 2638.5999999999995,
+        "p99": 2912.52,
+        "sum": 15159.0029296875,
+        "values": [
+          1351,
+          1121,
+          1572,
+          1529.0029296875,
+          2981,
+          2067,
+          968,
+          1445,
+          2125
+        ]
+      },
+      "llm": {
+        "max": 2692,
+        "min": 661,
+        "num": 9,
+        "p50": 1188,
+        "p90": 2007.1999999999994,
+        "p95": 2349.5999999999995,
+        "p99": 2623.52,
+        "sum": 12588,
+        "values": [
+          1188,
+          957,
+          1111,
+          1264,
+          2692,
+          1794,
+          661,
+          1085,
+          1836
+        ]
+      },
+      "tts": {
+        "max": 77,
+        "min": 50,
+        "num": 9,
+        "p50": 61,
+        "p90": 74.6,
+        "p95": 75.8,
+        "p99": 76.76,
+        "sum": 564,
+        "values": [
+          77,
+          60,
+          51,
+          61,
+          69,
+          64,
+          50,
+          74,
+          58
+        ]
+      }
+    },
+    "agent_id": "agent_024251ac761abc082404386d93",
+    "call_cost": {
+      "combined_cost": 49.295,
+      "product_costs": [
+        {
+          "cost": 12.1916711,
+          "product": "retell_voice_engine",
+          "unit_price": 0.0916667
+        },
+        {
+          "cost": 3.325,
+          "product": "cartesia_tts_new",
+          "unit_price": 0.025
+        },
+        {
+          "cost": 28.3733289,
+          "product": "claude_5_5_opus",
+          "unit_price": 0.2133333
+        },
+        {
+          "cost": 3.325,
+          "product": "us_twilio_telephony",
+          "unit_price": 0.025
+        },
+        {
+          "cost": 2.08,
+          "product": "gpt_5_6_terra_text_testing",
+          "unit_price": 2.08
+        }
+      ],
+      "total_duration_seconds": 133,
+      "total_duration_unit_price": 0.355
+    },
+    "call_type": "phone_call",
+    "direction": "inbound",
+    "to_number": "•••• 5067",
+    "agent_name": "Med Spa Front Desk Trainer - Jessica",
+    "tool_calls": [
+      {
+        "name": "End Call",
+        "type": "end_call",
+        "tool_call_id": "end_call_e9039f",
+        "start_time_sec": 132.472
+      }
+    ],
+    "transcript": "User: Hello. This is GuillaMed This is Randy. How can I help you? \nAgent: Hi, I was just calling to see how much you charge for Botox?\nUser: Yeah. Sure. We do 13 l per unit. \nAgent: Hm, $13? Another place quoted me $11 a unit. Can you match that, or do any kind of discount?\nUser: Sorry. We don't we don't do discounts. Our injector is great though. A lot of our really love her. \nAgent: Not even for a first-time client? I mean, people love her, but what actually makes her different?\nUser: Well, she has I mean, she has over ten years of experience you know, and during her consultation, we we we go through every client very individually to make sure that the treatment is right for everybody. \nAgent: Hm, okay. Ten years is good. My last place, I wasn't really sure the injector knew what she was doing.\nUser: Yeah. See, there's, um, it's it's really important to have a a experience injector. Would you like to schedule a free consultation? \nAgent: Yeah, okay. I could do a consult.\nUser: Okay. Sure. Um, are you free anytime this week? \nUser: Maybe Monday or Tuesday afternoon? \nAgent: Um, Monday or Tuesday afternoon could work.\nUser: Okay. Monday, we have one PM, two thirty, and three thirty. And then Tuesday, we're open we have two o'clock and four o'clock open. \nAgent: Monday at two thirty works.\nUser: Okay. Awesome. Can I get a name and a phone number, please? \nAgent: It's Jessica, and my number's 555-382-1947.\nUser: Okay. Awesome, Jessica. We'll see you, uh, Monday at two thirty then. \nAgent: Okay, sounds good. Thanks, bye.\n",
+    "call_status": "ended",
+    "duration_ms": 132474,
+    "from_number": "•••• 2746",
+    "agent_version": 0,
+    "end_timestamp": 1794702864186,
+    "recording_url": "REDACTED_URL",
+    "public_log_url": "REDACTED_URL",
+    "llm_token_usage": {
+      "values": [
+        2262,
+        2269,
+        2271,
+        3301,
+        3345,
+        2352,
+        2352,
+        2359,
+        3418,
+        2407,
+        3503,
+        3585,
+        2516,
+        2521,
+        2525,
+        2533,
+        3644,
+        2551,
+        2558,
+        2581,
+        3718,
+        2598,
+        2598,
+        2608,
+        3755,
+        2602
+      ],
+      "average": 2797.3846153846152,
+      "num_requests": 26
+    },
+    "start_timestamp": 1794702731712,
+    "opt_in_signed_url": false,
+    "transcript_object": [
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 3.315,
+            "word": "Hello. ",
+            "start": 2.835
+          },
+          {
+            "end": 3.4749998,
+            "word": "This ",
+            "start": 3.315
+          },
+          {
+            "end": 3.555,
+            "word": "is ",
+            "start": 3.4749998
+          },
+          {
+            "end": 4.035,
+            "word": "GuillaMed ",
+            "start": 3.555
+          },
+          {
+            "end": 4.5050003,
+            "word": "This ",
+            "start": 4.265000000000001
+          },
+          {
+            "end": 4.665,
+            "word": "is ",
+            "start": 4.5050003
+          },
+          {
+            "end": 5.065,
+            "word": "Randy. ",
+            "start": 4.665
+          },
+          {
+            "end": 5.1450000000000005,
+            "word": "How ",
+            "start": 5.065
+          },
+          {
+            "end": 5.305,
+            "word": "can ",
+            "start": 5.1450000000000005
+          },
+          {
+            "end": 5.3850004,
+            "word": "I ",
+            "start": 5.305
+          },
+          {
+            "end": 5.545,
+            "word": "help ",
+            "start": 5.3850004
+          },
+          {
+            "end": 5.625,
+            "word": "you? ",
+            "start": 5.545
+          }
+        ],
+        "content": "Hello. This is GuillaMed This is Randy. How can I help you? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 7.576,
+            "word": "Hi, ",
+            "start": 7.084507080078125
+          },
+          {
+            "end": 7.896,
+            "word": "I ",
+            "start": 7.735485107421875
+          },
+          {
+            "end": 8.056,
+            "word": "was ",
+            "start": 7.976
+          },
+          {
+            "end": 8.216,
+            "word": "just ",
+            "start": 8.136
+          },
+          {
+            "end": 8.456,
+            "word": "calling ",
+            "start": 8.296
+          },
+          {
+            "end": 8.616,
+            "word": "to ",
+            "start": 8.456
+          },
+          {
+            "end": 8.776,
+            "word": "see ",
+            "start": 8.696
+          },
+          {
+            "end": 8.856,
+            "word": "how ",
+            "start": 8.856
+          },
+          {
+            "end": 9.096,
+            "word": "much ",
+            "start": 8.856
+          },
+          {
+            "end": 9.176,
+            "word": "you ",
+            "start": 9.096
+          },
+          {
+            "end": 9.576,
+            "word": "charge ",
+            "start": 9.256000244140624
+          },
+          {
+            "end": 9.736,
+            "word": "for ",
+            "start": 9.656
+          },
+          {
+            "end": 10.456,
+            "word": "Botox?",
+            "start": 9.736
+          }
+        ],
+        "content": "Hi, I was just calling to see how much you charge for Botox?",
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 12.725001,
+            "word": "Yeah. ",
+            "start": 12.325
+          },
+          {
+            "end": 12.965,
+            "word": "Sure. ",
+            "start": 12.725001
+          },
+          {
+            "end": 14.225,
+            "word": "We ",
+            "start": 13.905
+          },
+          {
+            "end": 14.545,
+            "word": "do ",
+            "start": 14.225
+          },
+          {
+            "end": 15.185,
+            "word": "13 ",
+            "start": 14.545
+          },
+          {
+            "end": 15.745000000000001,
+            "word": "l ",
+            "start": 15.185
+          },
+          {
+            "end": 15.985,
+            "word": "per ",
+            "start": 15.745000000000001
+          },
+          {
+            "end": 16.225,
+            "word": "unit. ",
+            "start": 15.985
+          }
+        ],
+        "content": "Yeah. Sure. We do 13 l per unit. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 18.187,
+            "word": "Hm, ",
+            "start": 17.68773974609375
+          },
+          {
+            "end": 19.547,
+            "word": "$13?",
+            "start": 18.39618896484375
+          },
+          {
+            "end": 20.107,
+            "word": " Another ",
+            "start": 19.779208251953126
+          },
+          {
+            "end": 20.427,
+            "word": "place ",
+            "start": 20.187
+          },
+          {
+            "end": 20.747,
+            "word": "quoted ",
+            "start": 20.427
+          },
+          {
+            "end": 20.987,
+            "word": "me ",
+            "start": 20.827
+          },
+          {
+            "end": 21.787,
+            "word": "$11 ",
+            "start": 20.98917724609375
+          },
+          {
+            "end": 21.867,
+            "word": "a ",
+            "start": 21.867
+          },
+          {
+            "end": 22.267,
+            "word": "unit. ",
+            "start": 21.867
+          },
+          {
+            "end": 22.667,
+            "word": "Can ",
+            "start": 22.4965048828125
+          },
+          {
+            "end": 22.747,
+            "word": "you ",
+            "start": 22.747
+          },
+          {
+            "end": 22.987,
+            "word": "match ",
+            "start": 22.747
+          },
+          {
+            "end": 23.387,
+            "word": "that, ",
+            "start": 23.067
+          },
+          {
+            "end": 23.787,
+            "word": "or ",
+            "start": 23.49845849609375
+          },
+          {
+            "end": 23.947,
+            "word": "do ",
+            "start": 23.867
+          },
+          {
+            "end": 24.107,
+            "word": "any ",
+            "start": 24.027
+          },
+          {
+            "end": 24.347,
+            "word": "kind ",
+            "start": 24.187
+          },
+          {
+            "end": 24.427,
+            "word": "of ",
+            "start": 24.347
+          },
+          {
+            "end": 24.907,
+            "word": "discount?",
+            "start": 24.427
+          }
+        ],
+        "content": "Hm, $13? Another place quoted me $11 a unit. Can you match that, or do any kind of discount?",
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 26.795,
+            "word": "Sorry. ",
+            "start": 26.234999
+          },
+          {
+            "end": 26.955000000000002,
+            "word": "We ",
+            "start": 26.795
+          },
+          {
+            "end": 27.115,
+            "word": "don't ",
+            "start": 26.955000000000002
+          },
+          {
+            "end": 27.355,
+            "word": "we ",
+            "start": 27.115
+          },
+          {
+            "end": 27.515,
+            "word": "don't ",
+            "start": 27.355
+          },
+          {
+            "end": 27.675,
+            "word": "do ",
+            "start": 27.515
+          },
+          {
+            "end": 28.234999,
+            "word": "discounts. ",
+            "start": 27.675
+          },
+          {
+            "end": 28.394999,
+            "word": "Our ",
+            "start": 28.234999
+          },
+          {
+            "end": 28.795,
+            "word": "injector ",
+            "start": 28.394999
+          },
+          {
+            "end": 28.875,
+            "word": "is ",
+            "start": 28.795
+          },
+          {
+            "end": 29.115,
+            "word": "great ",
+            "start": 28.875
+          },
+          {
+            "end": 29.814999,
+            "word": "though. ",
+            "start": 29.255
+          },
+          {
+            "end": 30.054999,
+            "word": "A ",
+            "start": 29.894999
+          },
+          {
+            "end": 30.214998,
+            "word": "lot ",
+            "start": 30.054999
+          },
+          {
+            "end": 30.294998,
+            "word": "of ",
+            "start": 30.214998
+          },
+          {
+            "end": 30.455000000000002,
+            "word": "our ",
+            "start": 30.294998
+          },
+          {
+            "end": 31.295,
+            "word": "really ",
+            "start": 30.895
+          },
+          {
+            "end": 31.455000000000002,
+            "word": "love ",
+            "start": 31.295
+          },
+          {
+            "end": 31.615,
+            "word": "her. ",
+            "start": 31.455000000000002
+          }
+        ],
+        "content": "Sorry. We don't we don't do discounts. Our injector is great though. A lot of our really love her. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 33.547,
+            "word": "Not ",
+            "start": 33.30308203125
+          },
+          {
+            "end": 33.787,
+            "word": "even ",
+            "start": 33.627
+          },
+          {
+            "end": 34.027,
+            "word": "for ",
+            "start": 33.867
+          },
+          {
+            "end": 34.107,
+            "word": "a ",
+            "start": 34.107
+          },
+          {
+            "end": 34.747,
+            "word": "first-time ",
+            "start": 34.10700415039062
+          },
+          {
+            "end": 35.547,
+            "word": "client?",
+            "start": 34.747
+          },
+          {
+            "end": 35.867,
+            "word": " I ",
+            "start": 35.7650810546875
+          },
+          {
+            "end": 36.347,
+            "word": "mean, ",
+            "start": 35.867
+          },
+          {
+            "end": 36.907,
+            "word": "people ",
+            "start": 36.532990234375
+          },
+          {
+            "end": 37.227,
+            "word": "love ",
+            "start": 36.987000244140624
+          },
+          {
+            "end": 37.707,
+            "word": "her, ",
+            "start": 37.22700048828125
+          },
+          {
+            "end": 38.107,
+            "word": "but ",
+            "start": 37.8666513671875
+          },
+          {
+            "end": 38.347,
+            "word": "what ",
+            "start": 38.188170654296876
+          },
+          {
+            "end": 38.747,
+            "word": "actually ",
+            "start": 38.34700122070313
+          },
+          {
+            "end": 38.987,
+            "word": "makes ",
+            "start": 38.827
+          },
+          {
+            "end": 39.147,
+            "word": "her ",
+            "start": 38.987
+          },
+          {
+            "end": 39.707,
+            "word": "different?",
+            "start": 39.2270595703125
+          }
+        ],
+        "content": "Not even for a first-time client? I mean, people love her, but what actually makes her different?",
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 41.43499799999999,
+            "word": "Well, ",
+            "start": 41.19499999999999
+          },
+          {
+            "end": 41.675,
+            "word": "she ",
+            "start": 41.43499799999999
+          },
+          {
+            "end": 41.914997,
+            "word": "has ",
+            "start": 41.675
+          },
+          {
+            "end": 42.154999999999994,
+            "word": "I ",
+            "start": 41.995
+          },
+          {
+            "end": 42.394997,
+            "word": "mean, ",
+            "start": 42.154999999999994
+          },
+          {
+            "end": 42.474999999999994,
+            "word": "she ",
+            "start": 42.394997
+          },
+          {
+            "end": 42.635,
+            "word": "has ",
+            "start": 42.474999999999994
+          },
+          {
+            "end": 42.874995999999996,
+            "word": "over ",
+            "start": 42.635
+          },
+          {
+            "end": 43.035,
+            "word": "ten ",
+            "start": 42.874995999999996
+          },
+          {
+            "end": 43.274998,
+            "word": "years ",
+            "start": 43.035
+          },
+          {
+            "end": 43.51499999999999,
+            "word": "of ",
+            "start": 43.274998
+          },
+          {
+            "end": 43.914997,
+            "word": "experience ",
+            "start": 43.51499999999999
+          },
+          {
+            "end": 44.985,
+            "word": "you ",
+            "start": 44.745003
+          },
+          {
+            "end": 45.144999999999996,
+            "word": "know, ",
+            "start": 44.985
+          },
+          {
+            "end": 45.305,
+            "word": "and ",
+            "start": 45.144999999999996
+          },
+          {
+            "end": 45.545002,
+            "word": "during ",
+            "start": 45.305
+          },
+          {
+            "end": 45.785,
+            "word": "her ",
+            "start": 45.545002
+          },
+          {
+            "end": 46.665,
+            "word": "consultation, ",
+            "start": 45.785
+          },
+          {
+            "end": 46.745003,
+            "word": "we ",
+            "start": 46.665
+          },
+          {
+            "end": 47.065003,
+            "word": "we ",
+            "start": 46.745003
+          },
+          {
+            "end": 47.385002,
+            "word": "we ",
+            "start": 47.065003
+          },
+          {
+            "end": 49.254996999999996,
+            "word": "go ",
+            "start": 49.01499999999999
+          },
+          {
+            "end": 49.495,
+            "word": "through ",
+            "start": 49.254996999999996
+          },
+          {
+            "end": 49.815,
+            "word": "every ",
+            "start": 49.495
+          },
+          {
+            "end": 50.535,
+            "word": "client ",
+            "start": 49.815
+          },
+          {
+            "end": 51.094998,
+            "word": "very ",
+            "start": 50.614998
+          },
+          {
+            "end": 51.734997,
+            "word": "individually ",
+            "start": 51.094998
+          },
+          {
+            "end": 52.05499699999999,
+            "word": "to ",
+            "start": 51.734997
+          },
+          {
+            "end": 52.724999999999994,
+            "word": "make ",
+            "start": 52.404999999999994
+          },
+          {
+            "end": 52.885,
+            "word": "sure ",
+            "start": 52.724999999999994
+          },
+          {
+            "end": 53.125,
+            "word": "that ",
+            "start": 52.885
+          },
+          {
+            "end": 53.285,
+            "word": "the ",
+            "start": 53.125
+          },
+          {
+            "end": 53.605,
+            "word": "treatment ",
+            "start": 53.285
+          },
+          {
+            "end": 53.76499999999999,
+            "word": "is ",
+            "start": 53.605
+          },
+          {
+            "end": 54.004996999999996,
+            "word": "right ",
+            "start": 53.76499999999999
+          },
+          {
+            "end": 54.164997,
+            "word": "for ",
+            "start": 54.004996999999996
+          },
+          {
+            "end": 54.484997,
+            "word": "everybody. ",
+            "start": 54.164997
+          }
+        ],
+        "content": "Well, she has I mean, she has over ten years of experience you know, and during her consultation, we we we go through every client very individually to make sure that the treatment is right for everybody. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 56.534,
+            "word": "Hm, ",
+            "start": 56.075534912109376
+          },
+          {
+            "end": 57.254,
+            "word": "okay. ",
+            "start": 56.76444897460937
+          },
+          {
+            "end": 57.814,
+            "word": "Ten ",
+            "start": 57.55614916992187
+          },
+          {
+            "end": 58.134,
+            "word": "years ",
+            "start": 57.894
+          },
+          {
+            "end": 58.294,
+            "word": "is ",
+            "start": 58.134
+          },
+          {
+            "end": 58.614,
+            "word": "good. ",
+            "start": 58.374
+          },
+          {
+            "end": 58.934,
+            "word": "My ",
+            "start": 58.828626953125
+          },
+          {
+            "end": 59.254,
+            "word": "last ",
+            "start": 59.014
+          },
+          {
+            "end": 59.814,
+            "word": "place, ",
+            "start": 59.254
+          },
+          {
+            "end": 60.054,
+            "word": "I ",
+            "start": 59.9725546875
+          },
+          {
+            "end": 60.294,
+            "word": "wasn't ",
+            "start": 60.134
+          },
+          {
+            "end": 60.534,
+            "word": "really ",
+            "start": 60.294
+          },
+          {
+            "end": 60.774,
+            "word": "sure ",
+            "start": 60.614
+          },
+          {
+            "end": 60.854,
+            "word": "the ",
+            "start": 60.854
+          },
+          {
+            "end": 61.334,
+            "word": "injector ",
+            "start": 60.854
+          },
+          {
+            "end": 61.494,
+            "word": "knew ",
+            "start": 61.414
+          },
+          {
+            "end": 61.574,
+            "word": "what ",
+            "start": 61.494
+          },
+          {
+            "end": 61.734,
+            "word": "she ",
+            "start": 61.654
+          },
+          {
+            "end": 61.894,
+            "word": "was ",
+            "start": 61.814
+          },
+          {
+            "end": 62.374,
+            "word": "doing.",
+            "start": 61.894
+          }
+        ],
+        "content": "Hm, okay. Ten years is good. My last place, I wasn't really sure the injector knew what she was doing.",
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 64.62500399999999,
+            "word": "Yeah. ",
+            "start": 64.225
+          },
+          {
+            "end": 65.10499999999999,
+            "word": "See, ",
+            "start": 64.62500399999999
+          },
+          {
+            "end": 65.74499999999999,
+            "word": "there's, ",
+            "start": 65.10499999999999
+          },
+          {
+            "end": 66.065,
+            "word": "um, ",
+            "start": 65.985
+          },
+          {
+            "end": 66.38499999999999,
+            "word": "it's ",
+            "start": 66.065
+          },
+          {
+            "end": 66.62500399999999,
+            "word": "it's ",
+            "start": 66.38499999999999
+          },
+          {
+            "end": 66.785,
+            "word": "really ",
+            "start": 66.62500399999999
+          },
+          {
+            "end": 67.10499999999999,
+            "word": "important ",
+            "start": 66.785
+          },
+          {
+            "end": 67.345,
+            "word": "to ",
+            "start": 67.10499999999999
+          },
+          {
+            "end": 67.585,
+            "word": "have ",
+            "start": 67.345
+          },
+          {
+            "end": 67.825,
+            "word": "a ",
+            "start": 67.585
+          },
+          {
+            "end": 69.24501,
+            "word": "a ",
+            "start": 69.005
+          },
+          {
+            "end": 69.56501,
+            "word": "experience ",
+            "start": 69.24501
+          },
+          {
+            "end": 70.12500399999999,
+            "word": "injector. ",
+            "start": 69.56501
+          },
+          {
+            "end": 70.285,
+            "word": "Would ",
+            "start": 70.12500399999999
+          },
+          {
+            "end": 70.365,
+            "word": "you ",
+            "start": 70.285
+          },
+          {
+            "end": 70.525005,
+            "word": "like ",
+            "start": 70.365
+          },
+          {
+            "end": 70.685,
+            "word": "to ",
+            "start": 70.525005
+          },
+          {
+            "end": 71.165005,
+            "word": "schedule ",
+            "start": 70.685
+          },
+          {
+            "end": 71.485005,
+            "word": "a ",
+            "start": 71.165005
+          },
+          {
+            "end": 71.805004,
+            "word": "free ",
+            "start": 71.485005
+          },
+          {
+            "end": 72.285,
+            "word": "consultation? ",
+            "start": 71.805004
+          }
+        ],
+        "content": "Yeah. See, there's, um, it's it's really important to have a a experience injector. Would you like to schedule a free consultation? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 76.124,
+            "word": "Yeah, ",
+            "start": 75.71682446289063
+          },
+          {
+            "end": 76.764,
+            "word": "okay. ",
+            "start": 76.2830048828125
+          },
+          {
+            "end": 77.164,
+            "word": "I ",
+            "start": 77.01462841796875
+          },
+          {
+            "end": 77.324,
+            "word": "could ",
+            "start": 77.164
+          },
+          {
+            "end": 77.404,
+            "word": "do ",
+            "start": 77.404
+          },
+          {
+            "end": 77.484,
+            "word": "a ",
+            "start": 77.484
+          },
+          {
+            "end": 78.124,
+            "word": "consult.",
+            "start": 77.484
+          }
+        ],
+        "content": "Yeah, okay. I could do a consult.",
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 80.185,
+            "word": "Okay. ",
+            "start": 79.545
+          },
+          {
+            "end": 80.66499999999999,
+            "word": "Sure. ",
+            "start": 80.185
+          },
+          {
+            "end": 81.065,
+            "word": "Um, ",
+            "start": 80.66499999999999
+          },
+          {
+            "end": 81.465,
+            "word": "are ",
+            "start": 81.065
+          },
+          {
+            "end": 81.625,
+            "word": "you ",
+            "start": 81.465
+          },
+          {
+            "end": 82.38499999999999,
+            "word": "free ",
+            "start": 81.74499999999999
+          },
+          {
+            "end": 83.185,
+            "word": "anytime ",
+            "start": 82.38499999999999
+          },
+          {
+            "end": 83.58499499999999,
+            "word": "this ",
+            "start": 83.185
+          },
+          {
+            "end": 83.825,
+            "word": "week? ",
+            "start": 83.58499499999999
+          }
+        ],
+        "content": "Okay. Sure. Um, are you free anytime this week? "
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 84.685,
+            "word": "Maybe ",
+            "start": 84.285
+          },
+          {
+            "end": 85.085,
+            "word": "Monday ",
+            "start": 84.685
+          },
+          {
+            "end": 85.485,
+            "word": "or ",
+            "start": 85.085
+          },
+          {
+            "end": 86.045,
+            "word": "Tuesday ",
+            "start": 85.485
+          },
+          {
+            "end": 86.365,
+            "word": "afternoon? ",
+            "start": 86.045
+          }
+        ],
+        "content": "Maybe Monday or Tuesday afternoon? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 89.192,
+            "word": "Um, ",
+            "start": 88.54412963867188
+          },
+          {
+            "end": 89.752,
+            "word": "Monday ",
+            "start": 89.48854028320312
+          },
+          {
+            "end": 89.912,
+            "word": "or ",
+            "start": 89.752
+          },
+          {
+            "end": 90.312,
+            "word": "Tuesday ",
+            "start": 89.992
+          },
+          {
+            "end": 90.792,
+            "word": "afternoon ",
+            "start": 90.312
+          },
+          {
+            "end": 90.952,
+            "word": "could ",
+            "start": 90.872
+          },
+          {
+            "end": 91.352,
+            "word": "work.",
+            "start": 90.952
+          }
+        ],
+        "content": "Um, Monday or Tuesday afternoon could work.",
+        "metadata": {
+          "response_id": 17
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 93.63500599999999,
+            "word": "Okay. ",
+            "start": 92.99501
+          },
+          {
+            "end": 94.515,
+            "word": "Monday, ",
+            "start": 93.63500599999999
+          },
+          {
+            "end": 94.675,
+            "word": "we ",
+            "start": 94.515
+          },
+          {
+            "end": 94.99501,
+            "word": "have ",
+            "start": 94.675
+          },
+          {
+            "end": 96.725,
+            "word": "one ",
+            "start": 96.165005
+          },
+          {
+            "end": 97.52499999999999,
+            "word": "PM, ",
+            "start": 96.725
+          },
+          {
+            "end": 97.925,
+            "word": "two ",
+            "start": 97.60499999999999
+          },
+          {
+            "end": 98.24499999999999,
+            "word": "thirty, ",
+            "start": 97.925
+          },
+          {
+            "end": 99.725,
+            "word": "and ",
+            "start": 99.325
+          },
+          {
+            "end": 100.045,
+            "word": "three ",
+            "start": 99.725
+          },
+          {
+            "end": 100.52499999999999,
+            "word": "thirty. ",
+            "start": 100.045
+          },
+          {
+            "end": 100.685,
+            "word": "And ",
+            "start": 100.52499999999999
+          },
+          {
+            "end": 100.845,
+            "word": "then ",
+            "start": 100.685
+          },
+          {
+            "end": 101.485005,
+            "word": "Tuesday, ",
+            "start": 100.845
+          },
+          {
+            "end": 101.645,
+            "word": "we're ",
+            "start": 101.485005
+          },
+          {
+            "end": 102.765,
+            "word": "open ",
+            "start": 101.645
+          },
+          {
+            "end": 103.165005,
+            "word": "we ",
+            "start": 102.925
+          },
+          {
+            "end": 103.325,
+            "word": "have ",
+            "start": 103.165005
+          },
+          {
+            "end": 104.115,
+            "word": "two ",
+            "start": 103.875
+          },
+          {
+            "end": 104.435,
+            "word": "o'clock ",
+            "start": 104.115
+          },
+          {
+            "end": 104.595,
+            "word": "and ",
+            "start": 104.435
+          },
+          {
+            "end": 104.755,
+            "word": "four ",
+            "start": 104.595
+          },
+          {
+            "end": 105.075,
+            "word": "o'clock ",
+            "start": 104.755
+          },
+          {
+            "end": 105.395,
+            "word": "open. ",
+            "start": 105.075
+          }
+        ],
+        "content": "Okay. Monday, we have one PM, two thirty, and three thirty. And then Tuesday, we're open we have two o'clock and four o'clock open. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 106.963,
+            "word": "Monday ",
+            "start": 106.48195288085938
+          },
+          {
+            "end": 107.123,
+            "word": "at ",
+            "start": 107.04300024414063
+          },
+          {
+            "end": 107.363,
+            "word": "two ",
+            "start": 107.12300219726562
+          },
+          {
+            "end": 107.683,
+            "word": "thirty ",
+            "start": 107.443
+          },
+          {
+            "end": 108.323,
+            "word": "works.",
+            "start": 107.683
+          }
+        ],
+        "content": "Monday at two thirty works.",
+        "metadata": {
+          "response_id": 21
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 109.99499999999999,
+            "word": "Okay. ",
+            "start": 109.514996
+          },
+          {
+            "end": 110.63499999999999,
+            "word": "Awesome. ",
+            "start": 109.99499999999999
+          },
+          {
+            "end": 111.035,
+            "word": "Can ",
+            "start": 110.71499
+          },
+          {
+            "end": 111.194996,
+            "word": "I ",
+            "start": 111.035
+          },
+          {
+            "end": 111.35499999999999,
+            "word": "get ",
+            "start": 111.194996
+          },
+          {
+            "end": 111.675,
+            "word": "a ",
+            "start": 111.35499999999999
+          },
+          {
+            "end": 111.99499999999999,
+            "word": "name ",
+            "start": 111.675
+          },
+          {
+            "end": 112.235,
+            "word": "and ",
+            "start": 111.99499999999999
+          },
+          {
+            "end": 112.39498999999999,
+            "word": "a ",
+            "start": 112.235
+          },
+          {
+            "end": 113.055004,
+            "word": "phone ",
+            "start": 112.735005
+          },
+          {
+            "end": 113.535,
+            "word": "number, ",
+            "start": 113.055004
+          },
+          {
+            "end": 113.695,
+            "word": "please? ",
+            "start": 113.535
+          }
+        ],
+        "content": "Okay. Awesome. Can I get a name and a phone number, please? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 115.34,
+            "word": "It's ",
+            "start": 115.18032177734375
+          },
+          {
+            "end": 115.98,
+            "word": "Jessica, ",
+            "start": 115.42
+          },
+          {
+            "end": 116.22,
+            "word": "and ",
+            "start": 116.06022583007812
+          },
+          {
+            "end": 116.38,
+            "word": "my ",
+            "start": 116.3
+          },
+          {
+            "end": 116.94,
+            "word": "number's ",
+            "start": 116.38
+          },
+          {
+            "end": 121.74,
+            "word": "555-382-1947.",
+            "start": 117.02
+          }
+        ],
+        "content": "It's Jessica, and my number's 555-382-1947.",
+        "metadata": {
+          "response_id": 25
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 124.425,
+            "word": "Okay. ",
+            "start": 123.865
+          },
+          {
+            "end": 124.904995,
+            "word": "Awesome, ",
+            "start": 124.425
+          },
+          {
+            "end": 125.30499999999999,
+            "word": "Jessica. ",
+            "start": 124.904995
+          },
+          {
+            "end": 125.545,
+            "word": "We'll ",
+            "start": 125.30499999999999
+          },
+          {
+            "end": 125.705,
+            "word": "see ",
+            "start": 125.545
+          },
+          {
+            "end": 125.944996,
+            "word": "you, ",
+            "start": 125.705
+          },
+          {
+            "end": 126.185,
+            "word": "uh, ",
+            "start": 125.944996
+          },
+          {
+            "end": 126.66499999999999,
+            "word": "Monday ",
+            "start": 126.185
+          },
+          {
+            "end": 126.825,
+            "word": "at ",
+            "start": 126.66499999999999
+          },
+          {
+            "end": 126.985,
+            "word": "two ",
+            "start": 126.825
+          },
+          {
+            "end": 127.225,
+            "word": "thirty ",
+            "start": 126.985
+          },
+          {
+            "end": 127.465,
+            "word": "then. ",
+            "start": 127.225
+          }
+        ],
+        "content": "Okay. Awesome, Jessica. We'll see you, uh, Monday at two thirty then. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 130.19,
+            "word": "Okay, ",
+            "start": 129.702857421875
+          },
+          {
+            "end": 130.67,
+            "word": "sounds ",
+            "start": 130.27044921875
+          },
+          {
+            "end": 131.07,
+            "word": "good. ",
+            "start": 130.75
+          },
+          {
+            "end": 131.87,
+            "word": "Thanks, ",
+            "start": 131.30096997070314
+          },
+          {
+            "end": 132.35,
+            "word": "bye.",
+            "start": 131.95229541015624
+          }
+        ],
+        "content": "Okay, sounds good. Thanks, bye.",
+        "metadata": {
+          "response_id": 26
+        }
+      }
+    ],
+    "custom_sip_headers": {
+      "diversion": "<sip:•••• 5067@twilio.com>;reason=unconditional",
+      "x-twilio-callsid": "REDACTED_SID",
+      "x-twilio-verstat": "TN-Validation-Passed-A",
+      "p-asserted-identity": "<sip:•••• 2746@REDACTED_IP;user=phone>",
+      "x-twilio-accountsid": "REDACTED_SID"
+    },
+    "data_storage_setting": "everything",
+    "disconnection_reason": "agent_hangup",
+    "telephony_identifier": {
+      "twilio_call_sid": "REDACTED_SID"
+    },
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 3.315,
+            "word": "Hello. ",
+            "start": 2.835
+          },
+          {
+            "end": 3.4749998,
+            "word": "This ",
+            "start": 3.315
+          },
+          {
+            "end": 3.555,
+            "word": "is ",
+            "start": 3.4749998
+          },
+          {
+            "end": 4.035,
+            "word": "GuillaMed ",
+            "start": 3.555
+          },
+          {
+            "end": 4.5050003,
+            "word": "This ",
+            "start": 4.265000000000001
+          },
+          {
+            "end": 4.665,
+            "word": "is ",
+            "start": 4.5050003
+          },
+          {
+            "end": 5.065,
+            "word": "Randy. ",
+            "start": 4.665
+          },
+          {
+            "end": 5.1450000000000005,
+            "word": "How ",
+            "start": 5.065
+          },
+          {
+            "end": 5.305,
+            "word": "can ",
+            "start": 5.1450000000000005
+          },
+          {
+            "end": 5.3850004,
+            "word": "I ",
+            "start": 5.305
+          },
+          {
+            "end": 5.545,
+            "word": "help ",
+            "start": 5.3850004
+          },
+          {
+            "end": 5.625,
+            "word": "you? ",
+            "start": 5.545
+          }
+        ],
+        "content": "Hello. This is GuillaMed This is Randy. How can I help you? "
+      },
+      {
+        "role": "node_transition",
+        "time_sec": 5.915,
+        "new_node_id": "call_front_desk",
+        "new_node_name": "Call Front Desk",
+        "former_node_id": "begin",
+        "transition_type": "normal",
+        "former_node_name": "begin"
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 7.576,
+            "word": "Hi, ",
+            "start": 7.084507080078125
+          },
+          {
+            "end": 7.896,
+            "word": "I ",
+            "start": 7.735485107421875
+          },
+          {
+            "end": 8.056,
+            "word": "was ",
+            "start": 7.976
+          },
+          {
+            "end": 8.216,
+            "word": "just ",
+            "start": 8.136
+          },
+          {
+            "end": 8.456,
+            "word": "calling ",
+            "start": 8.296
+          },
+          {
+            "end": 8.616,
+            "word": "to ",
+            "start": 8.456
+          },
+          {
+            "end": 8.776,
+            "word": "see ",
+            "start": 8.696
+          },
+          {
+            "end": 8.856,
+            "word": "how ",
+            "start": 8.856
+          },
+          {
+            "end": 9.096,
+            "word": "much ",
+            "start": 8.856
+          },
+          {
+            "end": 9.176,
+            "word": "you ",
+            "start": 9.096
+          },
+          {
+            "end": 9.576,
+            "word": "charge ",
+            "start": 9.256000244140624
+          },
+          {
+            "end": 9.736,
+            "word": "for ",
+            "start": 9.656
+          },
+          {
+            "end": 10.456,
+            "word": "Botox?",
+            "start": 9.736
+          }
+        ],
+        "content": "Hi, I was just calling to see how much you charge for Botox?",
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 12.725001,
+            "word": "Yeah. ",
+            "start": 12.325
+          },
+          {
+            "end": 12.965,
+            "word": "Sure. ",
+            "start": 12.725001
+          },
+          {
+            "end": 14.225,
+            "word": "We ",
+            "start": 13.905
+          },
+          {
+            "end": 14.545,
+            "word": "do ",
+            "start": 14.225
+          },
+          {
+            "end": 15.185,
+            "word": "13 ",
+            "start": 14.545
+          },
+          {
+            "end": 15.745000000000001,
+            "word": "l ",
+            "start": 15.185
+          },
+          {
+            "end": 15.985,
+            "word": "per ",
+            "start": 15.745000000000001
+          },
+          {
+            "end": 16.225,
+            "word": "unit. ",
+            "start": 15.985
+          }
+        ],
+        "content": "Yeah. Sure. We do 13 l per unit. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 18.187,
+            "word": "Hm, ",
+            "start": 17.68773974609375
+          },
+          {
+            "end": 19.547,
+            "word": "$13?",
+            "start": 18.39618896484375
+          },
+          {
+            "end": 20.107,
+            "word": " Another ",
+            "start": 19.779208251953126
+          },
+          {
+            "end": 20.427,
+            "word": "place ",
+            "start": 20.187
+          },
+          {
+            "end": 20.747,
+            "word": "quoted ",
+            "start": 20.427
+          },
+          {
+            "end": 20.987,
+            "word": "me ",
+            "start": 20.827
+          },
+          {
+            "end": 21.787,
+            "word": "$11 ",
+            "start": 20.98917724609375
+          },
+          {
+            "end": 21.867,
+            "word": "a ",
+            "start": 21.867
+          },
+          {
+            "end": 22.267,
+            "word": "unit. ",
+            "start": 21.867
+          },
+          {
+            "end": 22.667,
+            "word": "Can ",
+            "start": 22.4965048828125
+          },
+          {
+            "end": 22.747,
+            "word": "you ",
+            "start": 22.747
+          },
+          {
+            "end": 22.987,
+            "word": "match ",
+            "start": 22.747
+          },
+          {
+            "end": 23.387,
+            "word": "that, ",
+            "start": 23.067
+          },
+          {
+            "end": 23.787,
+            "word": "or ",
+            "start": 23.49845849609375
+          },
+          {
+            "end": 23.947,
+            "word": "do ",
+            "start": 23.867
+          },
+          {
+            "end": 24.107,
+            "word": "any ",
+            "start": 24.027
+          },
+          {
+            "end": 24.347,
+            "word": "kind ",
+            "start": 24.187
+          },
+          {
+            "end": 24.427,
+            "word": "of ",
+            "start": 24.347
+          },
+          {
+            "end": 24.907,
+            "word": "discount?",
+            "start": 24.427
+          }
+        ],
+        "content": "Hm, $13? Another place quoted me $11 a unit. Can you match that, or do any kind of discount?",
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 26.795,
+            "word": "Sorry. ",
+            "start": 26.234999
+          },
+          {
+            "end": 26.955000000000002,
+            "word": "We ",
+            "start": 26.795
+          },
+          {
+            "end": 27.115,
+            "word": "don't ",
+            "start": 26.955000000000002
+          },
+          {
+            "end": 27.355,
+            "word": "we ",
+            "start": 27.115
+          },
+          {
+            "end": 27.515,
+            "word": "don't ",
+            "start": 27.355
+          },
+          {
+            "end": 27.675,
+            "word": "do ",
+            "start": 27.515
+          },
+          {
+            "end": 28.234999,
+            "word": "discounts. ",
+            "start": 27.675
+          },
+          {
+            "end": 28.394999,
+            "word": "Our ",
+            "start": 28.234999
+          },
+          {
+            "end": 28.795,
+            "word": "injector ",
+            "start": 28.394999
+          },
+          {
+            "end": 28.875,
+            "word": "is ",
+            "start": 28.795
+          },
+          {
+            "end": 29.115,
+            "word": "great ",
+            "start": 28.875
+          },
+          {
+            "end": 29.814999,
+            "word": "though. ",
+            "start": 29.255
+          },
+          {
+            "end": 30.054999,
+            "word": "A ",
+            "start": 29.894999
+          },
+          {
+            "end": 30.214998,
+            "word": "lot ",
+            "start": 30.054999
+          },
+          {
+            "end": 30.294998,
+            "word": "of ",
+            "start": 30.214998
+          },
+          {
+            "end": 30.455000000000002,
+            "word": "our ",
+            "start": 30.294998
+          },
+          {
+            "end": 31.295,
+            "word": "really ",
+            "start": 30.895
+          },
+          {
+            "end": 31.455000000000002,
+            "word": "love ",
+            "start": 31.295
+          },
+          {
+            "end": 31.615,
+            "word": "her. ",
+            "start": 31.455000000000002
+          }
+        ],
+        "content": "Sorry. We don't we don't do discounts. Our injector is great though. A lot of our really love her. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 33.547,
+            "word": "Not ",
+            "start": 33.30308203125
+          },
+          {
+            "end": 33.787,
+            "word": "even ",
+            "start": 33.627
+          },
+          {
+            "end": 34.027,
+            "word": "for ",
+            "start": 33.867
+          },
+          {
+            "end": 34.107,
+            "word": "a ",
+            "start": 34.107
+          },
+          {
+            "end": 34.747,
+            "word": "first-time ",
+            "start": 34.10700415039062
+          },
+          {
+            "end": 35.547,
+            "word": "client?",
+            "start": 34.747
+          },
+          {
+            "end": 35.867,
+            "word": " I ",
+            "start": 35.7650810546875
+          },
+          {
+            "end": 36.347,
+            "word": "mean, ",
+            "start": 35.867
+          },
+          {
+            "end": 36.907,
+            "word": "people ",
+            "start": 36.532990234375
+          },
+          {
+            "end": 37.227,
+            "word": "love ",
+            "start": 36.987000244140624
+          },
+          {
+            "end": 37.707,
+            "word": "her, ",
+            "start": 37.22700048828125
+          },
+          {
+            "end": 38.107,
+            "word": "but ",
+            "start": 37.8666513671875
+          },
+          {
+            "end": 38.347,
+            "word": "what ",
+            "start": 38.188170654296876
+          },
+          {
+            "end": 38.747,
+            "word": "actually ",
+            "start": 38.34700122070313
+          },
+          {
+            "end": 38.987,
+            "word": "makes ",
+            "start": 38.827
+          },
+          {
+            "end": 39.147,
+            "word": "her ",
+            "start": 38.987
+          },
+          {
+            "end": 39.707,
+            "word": "different?",
+            "start": 39.2270595703125
+          }
+        ],
+        "content": "Not even for a first-time client? I mean, people love her, but what actually makes her different?",
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 41.43499799999999,
+            "word": "Well, ",
+            "start": 41.19499999999999
+          },
+          {
+            "end": 41.675,
+            "word": "she ",
+            "start": 41.43499799999999
+          },
+          {
+            "end": 41.914997,
+            "word": "has ",
+            "start": 41.675
+          },
+          {
+            "end": 42.154999999999994,
+            "word": "I ",
+            "start": 41.995
+          },
+          {
+            "end": 42.394997,
+            "word": "mean, ",
+            "start": 42.154999999999994
+          },
+          {
+            "end": 42.474999999999994,
+            "word": "she ",
+            "start": 42.394997
+          },
+          {
+            "end": 42.635,
+            "word": "has ",
+            "start": 42.474999999999994
+          },
+          {
+            "end": 42.874995999999996,
+            "word": "over ",
+            "start": 42.635
+          },
+          {
+            "end": 43.035,
+            "word": "ten ",
+            "start": 42.874995999999996
+          },
+          {
+            "end": 43.274998,
+            "word": "years ",
+            "start": 43.035
+          },
+          {
+            "end": 43.51499999999999,
+            "word": "of ",
+            "start": 43.274998
+          },
+          {
+            "end": 43.914997,
+            "word": "experience ",
+            "start": 43.51499999999999
+          },
+          {
+            "end": 44.985,
+            "word": "you ",
+            "start": 44.745003
+          },
+          {
+            "end": 45.144999999999996,
+            "word": "know, ",
+            "start": 44.985
+          },
+          {
+            "end": 45.305,
+            "word": "and ",
+            "start": 45.144999999999996
+          },
+          {
+            "end": 45.545002,
+            "word": "during ",
+            "start": 45.305
+          },
+          {
+            "end": 45.785,
+            "word": "her ",
+            "start": 45.545002
+          },
+          {
+            "end": 46.665,
+            "word": "consultation, ",
+            "start": 45.785
+          },
+          {
+            "end": 46.745003,
+            "word": "we ",
+            "start": 46.665
+          },
+          {
+            "end": 47.065003,
+            "word": "we ",
+            "start": 46.745003
+          },
+          {
+            "end": 47.385002,
+            "word": "we ",
+            "start": 47.065003
+          },
+          {
+            "end": 49.254996999999996,
+            "word": "go ",
+            "start": 49.01499999999999
+          },
+          {
+            "end": 49.495,
+            "word": "through ",
+            "start": 49.254996999999996
+          },
+          {
+            "end": 49.815,
+            "word": "every ",
+            "start": 49.495
+          },
+          {
+            "end": 50.535,
+            "word": "client ",
+            "start": 49.815
+          },
+          {
+            "end": 51.094998,
+            "word": "very ",
+            "start": 50.614998
+          },
+          {
+            "end": 51.734997,
+            "word": "individually ",
+            "start": 51.094998
+          },
+          {
+            "end": 52.05499699999999,
+            "word": "to ",
+            "start": 51.734997
+          },
+          {
+            "end": 52.724999999999994,
+            "word": "make ",
+            "start": 52.404999999999994
+          },
+          {
+            "end": 52.885,
+            "word": "sure ",
+            "start": 52.724999999999994
+          },
+          {
+            "end": 53.125,
+            "word": "that ",
+            "start": 52.885
+          },
+          {
+            "end": 53.285,
+            "word": "the ",
+            "start": 53.125
+          },
+          {
+            "end": 53.605,
+            "word": "treatment ",
+            "start": 53.285
+          },
+          {
+            "end": 53.76499999999999,
+            "word": "is ",
+            "start": 53.605
+          },
+          {
+            "end": 54.004996999999996,
+            "word": "right ",
+            "start": 53.76499999999999
+          },
+          {
+            "end": 54.164997,
+            "word": "for ",
+            "start": 54.004996999999996
+          },
+          {
+            "end": 54.484997,
+            "word": "everybody. ",
+            "start": 54.164997
+          }
+        ],
+        "content": "Well, she has I mean, she has over ten years of experience you know, and during her consultation, we we we go through every client very individually to make sure that the treatment is right for everybody. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 56.534,
+            "word": "Hm, ",
+            "start": 56.075534912109376
+          },
+          {
+            "end": 57.254,
+            "word": "okay. ",
+            "start": 56.76444897460937
+          },
+          {
+            "end": 57.814,
+            "word": "Ten ",
+            "start": 57.55614916992187
+          },
+          {
+            "end": 58.134,
+            "word": "years ",
+            "start": 57.894
+          },
+          {
+            "end": 58.294,
+            "word": "is ",
+            "start": 58.134
+          },
+          {
+            "end": 58.614,
+            "word": "good. ",
+            "start": 58.374
+          },
+          {
+            "end": 58.934,
+            "word": "My ",
+            "start": 58.828626953125
+          },
+          {
+            "end": 59.254,
+            "word": "last ",
+            "start": 59.014
+          },
+          {
+            "end": 59.814,
+            "word": "place, ",
+            "start": 59.254
+          },
+          {
+            "end": 60.054,
+            "word": "I ",
+            "start": 59.9725546875
+          },
+          {
+            "end": 60.294,
+            "word": "wasn't ",
+            "start": 60.134
+          },
+          {
+            "end": 60.534,
+            "word": "really ",
+            "start": 60.294
+          },
+          {
+            "end": 60.774,
+            "word": "sure ",
+            "start": 60.614
+          },
+          {
+            "end": 60.854,
+            "word": "the ",
+            "start": 60.854
+          },
+          {
+            "end": 61.334,
+            "word": "injector ",
+            "start": 60.854
+          },
+          {
+            "end": 61.494,
+            "word": "knew ",
+            "start": 61.414
+          },
+          {
+            "end": 61.574,
+            "word": "what ",
+            "start": 61.494
+          },
+          {
+            "end": 61.734,
+            "word": "she ",
+            "start": 61.654
+          },
+          {
+            "end": 61.894,
+            "word": "was ",
+            "start": 61.814
+          },
+          {
+            "end": 62.374,
+            "word": "doing.",
+            "start": 61.894
+          }
+        ],
+        "content": "Hm, okay. Ten years is good. My last place, I wasn't really sure the injector knew what she was doing.",
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 64.62500399999999,
+            "word": "Yeah. ",
+            "start": 64.225
+          },
+          {
+            "end": 65.10499999999999,
+            "word": "See, ",
+            "start": 64.62500399999999
+          },
+          {
+            "end": 65.74499999999999,
+            "word": "there's, ",
+            "start": 65.10499999999999
+          },
+          {
+            "end": 66.065,
+            "word": "um, ",
+            "start": 65.985
+          },
+          {
+            "end": 66.38499999999999,
+            "word": "it's ",
+            "start": 66.065
+          },
+          {
+            "end": 66.62500399999999,
+            "word": "it's ",
+            "start": 66.38499999999999
+          },
+          {
+            "end": 66.785,
+            "word": "really ",
+            "start": 66.62500399999999
+          },
+          {
+            "end": 67.10499999999999,
+            "word": "important ",
+            "start": 66.785
+          },
+          {
+            "end": 67.345,
+            "word": "to ",
+            "start": 67.10499999999999
+          },
+          {
+            "end": 67.585,
+            "word": "have ",
+            "start": 67.345
+          },
+          {
+            "end": 67.825,
+            "word": "a ",
+            "start": 67.585
+          },
+          {
+            "end": 69.24501,
+            "word": "a ",
+            "start": 69.005
+          },
+          {
+            "end": 69.56501,
+            "word": "experience ",
+            "start": 69.24501
+          },
+          {
+            "end": 70.12500399999999,
+            "word": "injector. ",
+            "start": 69.56501
+          },
+          {
+            "end": 70.285,
+            "word": "Would ",
+            "start": 70.12500399999999
+          },
+          {
+            "end": 70.365,
+            "word": "you ",
+            "start": 70.285
+          },
+          {
+            "end": 70.525005,
+            "word": "like ",
+            "start": 70.365
+          },
+          {
+            "end": 70.685,
+            "word": "to ",
+            "start": 70.525005
+          },
+          {
+            "end": 71.165005,
+            "word": "schedule ",
+            "start": 70.685
+          },
+          {
+            "end": 71.485005,
+            "word": "a ",
+            "start": 71.165005
+          },
+          {
+            "end": 71.805004,
+            "word": "free ",
+            "start": 71.485005
+          },
+          {
+            "end": 72.285,
+            "word": "consultation? ",
+            "start": 71.805004
+          }
+        ],
+        "content": "Yeah. See, there's, um, it's it's really important to have a a experience injector. Would you like to schedule a free consultation? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 76.124,
+            "word": "Yeah, ",
+            "start": 75.71682446289063
+          },
+          {
+            "end": 76.764,
+            "word": "okay. ",
+            "start": 76.2830048828125
+          },
+          {
+            "end": 77.164,
+            "word": "I ",
+            "start": 77.01462841796875
+          },
+          {
+            "end": 77.324,
+            "word": "could ",
+            "start": 77.164
+          },
+          {
+            "end": 77.404,
+            "word": "do ",
+            "start": 77.404
+          },
+          {
+            "end": 77.484,
+            "word": "a ",
+            "start": 77.484
+          },
+          {
+            "end": 78.124,
+            "word": "consult.",
+            "start": 77.484
+          }
+        ],
+        "content": "Yeah, okay. I could do a consult.",
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 80.185,
+            "word": "Okay. ",
+            "start": 79.545
+          },
+          {
+            "end": 80.66499999999999,
+            "word": "Sure. ",
+            "start": 80.185
+          },
+          {
+            "end": 81.065,
+            "word": "Um, ",
+            "start": 80.66499999999999
+          },
+          {
+            "end": 81.465,
+            "word": "are ",
+            "start": 81.065
+          },
+          {
+            "end": 81.625,
+            "word": "you ",
+            "start": 81.465
+          },
+          {
+            "end": 82.38499999999999,
+            "word": "free ",
+            "start": 81.74499999999999
+          },
+          {
+            "end": 83.185,
+            "word": "anytime ",
+            "start": 82.38499999999999
+          },
+          {
+            "end": 83.58499499999999,
+            "word": "this ",
+            "start": 83.185
+          },
+          {
+            "end": 83.825,
+            "word": "week? ",
+            "start": 83.58499499999999
+          }
+        ],
+        "content": "Okay. Sure. Um, are you free anytime this week? "
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 84.685,
+            "word": "Maybe ",
+            "start": 84.285
+          },
+          {
+            "end": 85.085,
+            "word": "Monday ",
+            "start": 84.685
+          },
+          {
+            "end": 85.485,
+            "word": "or ",
+            "start": 85.085
+          },
+          {
+            "end": 86.045,
+            "word": "Tuesday ",
+            "start": 85.485
+          },
+          {
+            "end": 86.365,
+            "word": "afternoon? ",
+            "start": 86.045
+          }
+        ],
+        "content": "Maybe Monday or Tuesday afternoon? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 89.192,
+            "word": "Um, ",
+            "start": 88.54412963867188
+          },
+          {
+            "end": 89.752,
+            "word": "Monday ",
+            "start": 89.48854028320312
+          },
+          {
+            "end": 89.912,
+            "word": "or ",
+            "start": 89.752
+          },
+          {
+            "end": 90.312,
+            "word": "Tuesday ",
+            "start": 89.992
+          },
+          {
+            "end": 90.792,
+            "word": "afternoon ",
+            "start": 90.312
+          },
+          {
+            "end": 90.952,
+            "word": "could ",
+            "start": 90.872
+          },
+          {
+            "end": 91.352,
+            "word": "work.",
+            "start": 90.952
+          }
+        ],
+        "content": "Um, Monday or Tuesday afternoon could work.",
+        "metadata": {
+          "response_id": 17
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 93.63500599999999,
+            "word": "Okay. ",
+            "start": 92.99501
+          },
+          {
+            "end": 94.515,
+            "word": "Monday, ",
+            "start": 93.63500599999999
+          },
+          {
+            "end": 94.675,
+            "word": "we ",
+            "start": 94.515
+          },
+          {
+            "end": 94.99501,
+            "word": "have ",
+            "start": 94.675
+          },
+          {
+            "end": 96.725,
+            "word": "one ",
+            "start": 96.165005
+          },
+          {
+            "end": 97.52499999999999,
+            "word": "PM, ",
+            "start": 96.725
+          },
+          {
+            "end": 97.925,
+            "word": "two ",
+            "start": 97.60499999999999
+          },
+          {
+            "end": 98.24499999999999,
+            "word": "thirty, ",
+            "start": 97.925
+          },
+          {
+            "end": 99.725,
+            "word": "and ",
+            "start": 99.325
+          },
+          {
+            "end": 100.045,
+            "word": "three ",
+            "start": 99.725
+          },
+          {
+            "end": 100.52499999999999,
+            "word": "thirty. ",
+            "start": 100.045
+          },
+          {
+            "end": 100.685,
+            "word": "And ",
+            "start": 100.52499999999999
+          },
+          {
+            "end": 100.845,
+            "word": "then ",
+            "start": 100.685
+          },
+          {
+            "end": 101.485005,
+            "word": "Tuesday, ",
+            "start": 100.845
+          },
+          {
+            "end": 101.645,
+            "word": "we're ",
+            "start": 101.485005
+          },
+          {
+            "end": 102.765,
+            "word": "open ",
+            "start": 101.645
+          },
+          {
+            "end": 103.165005,
+            "word": "we ",
+            "start": 102.925
+          },
+          {
+            "end": 103.325,
+            "word": "have ",
+            "start": 103.165005
+          },
+          {
+            "end": 104.115,
+            "word": "two ",
+            "start": 103.875
+          },
+          {
+            "end": 104.435,
+            "word": "o'clock ",
+            "start": 104.115
+          },
+          {
+            "end": 104.595,
+            "word": "and ",
+            "start": 104.435
+          },
+          {
+            "end": 104.755,
+            "word": "four ",
+            "start": 104.595
+          },
+          {
+            "end": 105.075,
+            "word": "o'clock ",
+            "start": 104.755
+          },
+          {
+            "end": 105.395,
+            "word": "open. ",
+            "start": 105.075
+          }
+        ],
+        "content": "Okay. Monday, we have one PM, two thirty, and three thirty. And then Tuesday, we're open we have two o'clock and four o'clock open. "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 106.963,
+            "word": "Monday ",
+            "start": 106.48195288085938
+          },
+          {
+            "end": 107.123,
+            "word": "at ",
+            "start": 107.04300024414063
+          },
+          {
+            "end": 107.363,
+            "word": "two ",
+            "start": 107.12300219726562
+          },
+          {
+            "end": 107.683,
+            "word": "thirty ",
+            "start": 107.443
+          },
+          {
+            "end": 108.323,
+            "word": "works.",
+            "start": 107.683
+          }
+        ],
+        "content": "Monday at two thirty works.",
+        "metadata": {
+          "response_id": 21
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 109.99499999999999,
+            "word": "Okay. ",
+            "start": 109.514996
+          },
+          {
+            "end": 110.63499999999999,
+            "word": "Awesome. ",
+            "start": 109.99499999999999
+          },
+          {
+            "end": 111.035,
+            "word": "Can ",
+            "start": 110.71499
+          },
+          {
+            "end": 111.194996,
+            "word": "I ",
+            "start": 111.035
+          },
+          {
+            "end": 111.35499999999999,
+            "word": "get ",
+            "start": 111.194996
+          },
+          {
+            "end": 111.675,
+            "word": "a ",
+            "start": 111.35499999999999
+          },
+          {
+            "end": 111.99499999999999,
+            "word": "name ",
+            "start": 111.675
+          },
+          {
+            "end": 112.235,
+            "word": "and ",
+            "start": 111.99499999999999
+          },
+          {
+            "end": 112.39498999999999,
+            "word": "a ",
+            "start": 112.235
+          },
+          {
+            "end": 113.055004,
+            "word": "phone ",
+            "start": 112.735005
+          },
+          {
+            "end": 113.535,
+            "word": "number, ",
+            "start": 113.055004
+          },
+          {
+            "end": 113.695,
+            "word": "please? ",
+            "start": 113.535
+          }
+        ],
+        "content": "Okay. Awesome. Can I get a name and a phone number, please? "
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 115.34,
+            "word": "It's ",
+            "start": 115.18032177734375
+          },
+          {
+            "end": 115.98,
+            "word": "Jessica, ",
+            "start": 115.42
+          },
+          {
+            "end": 116.22,
+            "word": "and ",
+            "start": 116.06022583007812
+          },
+          {
+            "end": 116.38,
+            "word": "my ",
+            "start": 116.3
+          },
+          {
+            "end": 116.94,
+            "word": "number's ",
+            "start": 116.38
+          },
+          {
+            "end": 121.74,
+            "word": "555-382-1947.",
+            "start": 117.02
+          }
+        ],
+        "content": "It's Jessica, and my number's 555-382-1947.",
+        "metadata": {
+          "response_id": 25
+        }
+      },
+      {
+        "role": "user",
+        "words": [
+          {
+            "end": 124.425,
+            "word": "Okay. ",
+            "start": 123.865
+          },
+          {
+            "end": 124.904995,
+            "word": "Awesome, ",
+            "start": 124.425
+          },
+          {
+            "end": 125.30499999999999,
+            "word": "Jessica. ",
+            "start": 124.904995
+          },
+          {
+            "end": 125.545,
+            "word": "We'll ",
+            "start": 125.30499999999999
+          },
+          {
+            "end": 125.705,
+            "word": "see ",
+            "start": 125.545
+          },
+          {
+            "end": 125.944996,
+            "word": "you, ",
+            "start": 125.705
+          },
+          {
+            "end": 126.185,
+            "word": "uh, ",
+            "start": 125.944996
+          },
+          {
+            "end": 126.66499999999999,
+            "word": "Monday ",
+            "start": 126.185
+          },
+          {
+            "end": 126.825,
+            "word": "at ",
+            "start": 126.66499999999999
+          },
+          {
+            "end": 126.985,
+            "word": "two ",
+            "start": 126.825
+          },
+          {
+            "end": 127.225,
+            "word": "thirty ",
+            "start": 126.985
+          },
+          {
+            "end": 127.465,
+            "word": "then. ",
+            "start": 127.225
+          }
+        ],
+        "content": "Okay. Awesome, Jessica. We'll see you, uh, Monday at two thirty then. "
+      },
+      {
+        "role": "node_transition",
+        "time_sec": 128.315,
+        "new_node_id": "end_call",
+        "new_node_name": "End Call",
+        "former_node_id": "call_front_desk",
+        "transition_type": "normal",
+        "former_node_name": "Call Front Desk"
+      },
+      {
+        "role": "agent",
+        "words": [
+          {
+            "end": 130.19,
+            "word": "Okay, ",
+            "start": 129.702857421875
+          },
+          {
+            "end": 130.67,
+            "word": "sounds ",
+            "start": 130.27044921875
+          },
+          {
+            "end": 131.07,
+            "word": "good. ",
+            "start": 130.75
+          },
+          {
+            "end": 131.87,
+            "word": "Thanks, ",
+            "start": 131.30096997070314
+          },
+          {
+            "end": 132.35,
+            "word": "bye.",
+            "start": 131.95229541015624
+          }
+        ],
+        "content": "Okay, sounds good. Thanks, bye.",
+        "metadata": {
+          "response_id": 26
+        }
+      },
+      {
+        "name": "End Call",
+        "role": "tool_call_invocation",
+        "type": "end_call",
+        "time_sec": 132.472,
+        "arguments": "{}",
+        "tool_call_id": "end_call_e9039f"
+      }
+    ],
+    "collected_dynamic_variables": {
+      "current_node": "End Call",
+      "previous_node": "Call Front Desk"
+    },
+    "recording_multi_channel_url": "REDACTED_URL",
+    "retell_llm_dynamic_variables": {
+      "diversion": "<sip:•••• 5067@twilio.com>;reason=unconditional",
+      "twilio-callsid": "REDACTED_SID",
+      "twilio-verstat": "TN-Validation-Passed-A",
+      "twilio-accountsid": "REDACTED_SID",
+      "p-asserted-identity": "<sip:•••• 2746@REDACTED_IP;user=phone>"
+    }
+  },
+  "event": "call_ended",
+  "event_timestamp": 1794702864186
+}
