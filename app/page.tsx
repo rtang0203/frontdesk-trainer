@@ -1,5 +1,7 @@
+import { getDefaultScenario } from "@/lib/scenarios";
 import { LiveView } from "./LiveView";
 
 export default function Home() {
-  return <LiveView />;
+  const scenario = getDefaultScenario();
+  return <LiveView briefing={{ text: scenario.briefing, facts: scenario.traineeFacts }} />;
 }

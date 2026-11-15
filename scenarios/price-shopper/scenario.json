@@ -4,6 +4,13 @@
   "isDefault": true,
   "retellAgentIds": ["agent_024251ac761abc082404386d93"],
   "description": "A caller asks about Botox pricing, says a competitor is cheaper, and pushes for a discount.",
+  "briefing": "You work the front desk at Glow Medspa. A caller named Jessica wants to know about Botox.",
+  "traineeFacts": [
+    "Botox: $13 per unit. No discounts and no price matching.",
+    "Consultations are free. The injector decides how many units you need there.",
+    "Injector: licensed nurse practitioner with ten years of injecting experience.",
+    "Membership: $50 a month, no contract, cancel anytime. $1 off every unit, plus a monthly facial."
+  ],
   "spaFacts": [
     "Spa name: Glow Medspa",
     "Botox price: $13 per unit. No discounts and no price matching.",

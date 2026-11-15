@@ -5,12 +5,16 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Scorecard } from "@/components/Scorecard";
 import type { CallView } from "@/lib/callView";
 import { formatUsPhone } from "@/lib/phone";
+import { MIN_DURATION_MS } from "@/lib/transcript";
 
 const POLL_MS = 2000;
 const DEMO_NUMBER = process.env.NEXT_PUBLIC_DEMO_PHONE_NUMBER ?? "";
 const ACTIVE = new Set(["dialing", "in_progress", "scoring"]);
 
-export function LiveView() {
+/** What the trainee sees before and during a call; comes from the scenario config. */
+export type Briefing = { text: string; facts: string[] };
+
+export function LiveView({ briefing }: { briefing: Briefing }) {
   const [call, setCall] = useState<CallView | null>(null);
   const [detail, setDetail] = useState<CallView | null>(null);
   const sinceRef = useRef<string | null>(null);
@@ -72,16 +76,29 @@ export function LiveView() {
   const replayTag = call?.call_type === "replay" ? <RecordedTag /> : null;
 
   if (!call) {
-    return <CallMe heading="Enter your number and we'll call you" disabled={false} onStarted={poll} />;
+    return (
+      <div className="space-y-10">
+        <CallMe heading="Enter your number and we'll call you" disabled={false} onStarted={poll} />
+        <Instructions briefing={briefing} />
+      </div>
+    );
   }
 
   switch (call.status) {
     case "dialing":
       return (
-        <Status tag={replayTag} title="Calling you now." subtitle="Answer as the front desk." indicator={<Pulse />} />
+        <div className="space-y-8">
+          <Status tag={replayTag} title="Calling you now." subtitle="Answer as the front desk." indicator={<Pulse />} />
+          <CheatSheet facts={briefing.facts} />
+        </div>
       );
     case "in_progress":
-      return <Status tag={replayTag} title="Call in progress" indicator={<Pulse live />} />;
+      return (
+        <div className="space-y-8">
+          <Status tag={replayTag} title="Call in progress" indicator={<Pulse live />} />
+          <CheatSheet facts={briefing.facts} />
+        </div>
+      );
     case "scoring":
       return <Status tag={replayTag} title="Scoring your call" indicator={<Progress />} />;
     case "scored":
@@ -89,8 +106,9 @@ export function LiveView() {
         <div className="space-y-10">
           {replayTag}
           {shown?.scorecard ? <Scorecard call={shown} collapseTranscript /> : <Progress />}
-          <footer className="border-t border-stone-200 pt-8">
+          <footer className="space-y-8 border-t border-stone-200 pt-8">
             <CallMe heading="Practice again" small disabled={active} onStarted={poll} />
+            <CheatSheet facts={briefing.facts} />
           </footer>
         </div>
       );
@@ -100,6 +118,7 @@ export function LiveView() {
           {replayTag}
           <Notice>That call was too short to score. Try again.</Notice>
           <CallMe heading="Call me again" disabled={active} onStarted={poll} />
+          <Instructions briefing={briefing} />
         </div>
       );
     case "no_answer":
@@ -108,6 +127,7 @@ export function LiveView() {
           {replayTag}
           <Notice>No answer. Check your phone and try again.</Notice>
           <CallMe heading="Call me again" disabled={active} onStarted={poll} />
+          <Instructions briefing={briefing} />
         </div>
       );
     case "failed":
@@ -121,6 +141,7 @@ export function LiveView() {
             </Link>
           )}
           <CallMe heading="Call me again" disabled={active} onStarted={poll} />
+          <Instructions briefing={briefing} />
         </div>
       );
   }
@@ -227,7 +248,7 @@ function Status({
   tag: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-[50vh] flex-col items-center justify-center gap-6 text-center" aria-live="polite">
+    <div className="flex min-h-[40vh] flex-col items-center justify-center gap-6 text-center" aria-live="polite">
       {tag}
       {indicator}
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">{title}</h1>
@@ -238,6 +259,51 @@ function Status({
 
 function Notice({ children }: { children: React.ReactNode }) {
   return <p className="text-2xl font-semibold sm:text-3xl">{children}</p>;
+}
+
+function Instructions({ briefing }: { briefing: Briefing }) {
+  const steps = [
+    DEMO_NUMBER
+      ? `Enter your own number and press Call me. Your phone will ring from ${formatUsPhone(DEMO_NUMBER)}.`
+      : "Enter your own number and press Call me.",
+    `${briefing.text} Answer like you would at work, and stay in character.`,
+    `Talk for at least ${MIN_DURATION_MS / 1000} seconds, then hang up. Your scorecard shows up here about 10 seconds later.`,
+  ];
+  return (
+    <div className="grid gap-4 sm:grid-cols-2">
+      <section className="rounded-xl bg-white p-5 ring-1 ring-stone-200">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-stone-500">How it works</h2>
+        <ol className="mt-3 space-y-3">
+          {steps.map((step, i) => (
+            <li key={i} className="flex gap-3 text-base leading-snug">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">
+                {i + 1}
+              </span>
+              <span>{step}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <CheatSheet facts={briefing.facts} />
+    </div>
+  );
+}
+
+/** The spa facts the trainee is expected to know, kept on screen during the call. */
+function CheatSheet({ facts }: { facts: string[] }) {
+  return (
+    <section className="rounded-xl bg-white p-5 ring-1 ring-stone-200">
+      <h2 className="text-sm font-bold uppercase tracking-wider text-stone-500">Spa cheat sheet</h2>
+      <ul className="mt-3 space-y-2">
+        {facts.map((fact) => (
+          <li key={fact} className="flex gap-2 text-base leading-snug">
+            <span aria-hidden className="text-stone-400">•</span>
+            <span>{fact}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 function RecordedTag() {

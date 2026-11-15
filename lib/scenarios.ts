@@ -14,6 +14,10 @@ const ScenarioSchema = z.object({
   isDefault: z.boolean().optional(),
   retellAgentIds: z.array(z.string()),
   description: z.string().min(1),
+  /** Shown to the trainee before and during the call. */
+  briefing: z.string().min(1),
+  /** The trainee's cheat sheet. Separate from spaFacts, which also carries grader-only notes. */
+  traineeFacts: z.array(z.string().min(1)).min(1),
   spaFacts: z.array(z.string().min(1)).min(1),
   rubric: z.array(RubricItemSchema).min(1),
 });
