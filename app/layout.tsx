@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
-import { HomeLink } from "@/components/HomeLink";
+import { DM_Sans, Outfit } from "next/font/google";
+import { Suspense } from "react";
+import { HeaderNav, HomeLink, NavLink } from "@/components/HomeLink";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -21,20 +22,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans">
-        <header className="border-b border-stone-200 bg-white">
-          <nav className="mx-auto flex w-full max-w-3xl items-center justify-between px-5 py-3">
+    <html lang="en" className={`${outfit.variable} ${dmSans.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col font-sans">
+        <header className="border-b-2 border-ink">
+          <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-5.5 sm:px-14">
             <HomeLink />
-            <Link href="/calls" className="text-base text-stone-600 hover:text-stone-900">
-              Call history
-            </Link>
+            {/* The link reads the pathname, which suspends on /calls/[id] during prerendering. */}
+            <Suspense fallback={<NavLink onHistory={false} />}>
+              <HeaderNav />
+            </Suspense>
           </nav>
         </header>
-        <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-8 sm:py-12">{children}</main>
+        <main className="mx-auto w-full max-w-6xl flex-1 px-5 pt-13 pb-16 sm:px-14">{children}</main>
       </body>
     </html>
   );

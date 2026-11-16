@@ -146,13 +146,13 @@ detection on, set to hang up.
   `call_started` for a fake `web_call` (`call_id: "test_call"`) that never ends; storing it made an
   `in_progress` row that blocked the live page and "Call me" for 15 minutes. The demo uses phone calls
   only, so web calls (including dashboard test calls) never create rows.
-- **The live page shows instructions and a spa cheat sheet** (added after the first trial runs). Both come
-  from the scenario: `briefing` (who the trainee is and who's calling) and `traineeFacts` (what a real
-  employee would know). `traineeFacts` is kept separate from the grader's `spaFacts`, which also carries
-  grader-only notes such as the example consultation times. The cheat sheet stays on screen during the
-  call. The grading criteria are not shown up front.
-- **The history table drops the Scenario and Length columns on phones** and shows them under the date,
-  so score and status fit down to 320 px wide.
+- **The live page shows an "Incoming call" slip and a price list** (restyle, Nov 16 2026). Both come from
+  display-only scenario fields: `brief` (caller, what she's calling about, who the trainee is) and
+  `priceList` (label, value, optional note). The price list repeats facts from the grader's `spaFacts`,
+  which also carries grader-only notes such as the example consultation times, so **edit the two
+  together**; `tests/scenarios.test.ts` fails when a price list row has no matching spa fact. Scoring never
+  reads `brief` or `priceList`. The slip lists the rubric labels the call is scored on.
+- **The history table scrolls sideways on phones** inside its own container; the rest of the page doesn't.
 - **Replay duration** is the real ~3 s the replay took, since a fixture has no call length.
 - **The call-start route returns 409 for a retried request once the first one succeeded**, because the
   active-call check runs before Retell's idempotency key. The disabled button prevents this in practice.
