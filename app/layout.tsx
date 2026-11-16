@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import { HomeLink } from "@/components/HomeLink";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,9 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col font-sans">
         <header className="border-b border-stone-200 bg-white">
           <nav className="mx-auto flex w-full max-w-3xl items-center justify-between px-5 py-3">
-            <Link href="/" className="text-lg font-semibold tracking-tight">
-              Front Desk Trainer
-            </Link>
+            <HomeLink />
             <Link href="/calls" className="text-base text-stone-600 hover:text-stone-900">
               Call history
             </Link>

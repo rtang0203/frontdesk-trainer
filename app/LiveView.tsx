@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { RESET_LIVE_EVENT } from "@/components/HomeLink";
 import { Scorecard } from "@/components/Scorecard";
 import type { CallView } from "@/lib/callView";
 import { formatUsPhone } from "@/lib/phone";
@@ -18,41 +19,68 @@ export function LiveView({ briefing }: { briefing: Briefing }) {
   const [call, setCall] = useState<CallView | null>(null);
   const [detail, setDetail] = useState<CallView | null>(null);
   const sinceRef = useRef<string | null>(null);
+  // Bumped on reset so a poll already in flight can't bring back the old call.
+  const generationRef = useRef(0);
 
   const poll = useCallback(async () => {
     // The first poll has no `since`: it anchors the load time to the server clock,
     // and only an active call from before the load is shown.
+    const generation = generationRef.current;
     const since = sinceRef.current;
     const res = await fetch(since ? `/api/calls/latest?since=${encodeURIComponent(since)}` : "/api/calls/latest", {
       cache: "no-store",
     });
     if (!res.ok) return;
     const data: { call: CallView | null; serverTime: string } = await res.json();
+    if (generation !== generationRef.current) return;
     if (!since) {
-      sinceRef.current = data.serverTime;
-      setCall(data.call && ACTIVE.has(data.call.status) ? data.call : null);
+      const active = data.call && ACTIVE.has(data.call.status) ? data.call : null;
+      // Resuming an active call: anchor at its creation so it stays on screen once it
+      // finishes (until a newer call appears). Otherwise anchor at the server's clock.
+      sinceRef.current = active ? active.created_at : data.serverTime;
+      setCall(active);
     } else {
       setCall(data.call);
     }
   }, []);
 
+  // Start clean, like a fresh load: finished calls clear, and an active call comes back
+  // on the first poll. Runs on mount, whenever Next shows this page again after
+  // navigating away (it keeps visited pages alive with their state), and when the
+  // header logo is clicked while already here.
+  const reset = useCallback(() => {
+    generationRef.current++;
+    sinceRef.current = null;
+    setCall(null);
+    setDetail(null);
+  }, []);
+
   useEffect(() => {
     let stopped = false;
     let timer: number | undefined;
-    const loop = async () => {
+    let run = 0;
+    const loop = async (myRun: number) => {
       try {
         await poll();
       } catch {
         // Network blip: keep showing the last state and try again.
       }
-      if (!stopped) timer = window.setTimeout(loop, POLL_MS);
+      // A restart while this poll was in flight owns the schedule now.
+      if (!stopped && myRun === run) timer = window.setTimeout(() => loop(myRun), POLL_MS);
     };
-    loop();
+    const restart = () => {
+      window.clearTimeout(timer);
+      reset();
+      loop(++run);
+    };
+    restart();
+    window.addEventListener(RESET_LIVE_EVENT, restart);
     return () => {
       stopped = true;
-      clearTimeout(timer);
+      window.clearTimeout(timer);
+      window.removeEventListener(RESET_LIVE_EVENT, restart);
     };
-  }, [poll]);
+  }, [poll, reset]);
 
   // Finished calls: load the transcript once for the scorecard / failure link.
   const callId = call?.id;
