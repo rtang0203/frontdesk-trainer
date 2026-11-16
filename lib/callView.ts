@@ -39,7 +39,7 @@ export type CallView = {
   ended_at: string | null;
   duration_ms: number | null;
   created_at: string;
-  scenario: { id: string; name: string; labels: Record<string, string> };
+  scenario: { id: string; name: string; caller: string | null; labels: Record<string, string> };
   scorecard: Scorecard | null;
   passed: number | null;
   applicable: number | null;
@@ -64,6 +64,7 @@ export function toView(row: CallSummaryRow | CallRow, now: Date, withTranscript 
     scenario: {
       id: r.scenario_id,
       name: scenario?.name ?? r.scenario_id,
+      caller: scenario?.brief.caller ?? null,
       labels: Object.fromEntries((scenario?.rubric ?? []).map((item) => [item.id, item.label])),
     },
     scorecard: r.scorecard,

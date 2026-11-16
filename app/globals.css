@@ -1,17 +1,111 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens. Components use these names only (bg-slip, text-muted, border-ink...);
+ * Tailwind's default palette is switched off so no stray colors creep in.
+ */
+@theme {
+  --color-*: initial;
+  --color-page: #ffffff;
+  --color-ink: #111111;
+  --color-muted: #555555;
+  --color-rule: #bdbdbd;
+  --color-leader: #8a8a8a;
+  --color-slip: #e1ebf7;
+  --color-slip-rule: #9fb0c8;
+  --color-highlight: #ffe867;
+  --color-pass: #1e6b4a;
+  --color-fail: #b3261e;
+  --color-dot-calling: #3d7bd9;
+  --color-dot-live: #e5372b;
+
+  --shadow-*: initial;
+}
+
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-outfit);
 }
 
-/* One calm light theme: the page is shown on a laptop to people a few feet away. */
 body {
-  background: #f7f7f5;
-  color: #1c1c1a;
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-size: 17px;
+  line-height: 1.5;
 }
 
-@keyframes progress {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(300%); }
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+/* Headlines: about 60% size below 640px so they don't wrap awkwardly. */
+@utility type-start {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  @media (width >= 40rem) {
+    font-size: 58px;
+  }
+}
+
+@utility type-wait {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  @media (width >= 40rem) {
+    font-size: 72px;
+  }
+}
+
+@utility type-notice {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  @media (width >= 40rem) {
+    font-size: 68px;
+  }
+}
+
+@utility type-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  @media (width >= 40rem) {
+    font-size: 46px;
+  }
+}
+
+@utility type-score {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 78px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+/* The status dot on the waiting states. */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@utility animate-blink {
+  animation: blink 1.2s ease-in-out infinite;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }

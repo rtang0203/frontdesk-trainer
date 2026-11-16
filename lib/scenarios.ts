@@ -14,10 +14,15 @@ const ScenarioSchema = z.object({
   isDefault: z.boolean().optional(),
   retellAgentIds: z.array(z.string()),
   description: z.string().min(1),
-  /** Shown to the trainee before and during the call. */
-  briefing: z.string().min(1),
-  /** The trainee's cheat sheet. Separate from spaFacts, which also carries grader-only notes. */
-  traineeFacts: z.array(z.string().min(1)).min(1),
+  /** Display only: the "Incoming call" slip and scorecard title. Scoring never reads it. */
+  brief: z.object({ caller: z.string().min(1), about: z.string().min(1), role: z.string().min(1) }),
+  /**
+   * Display only: the trainee's price list. Repeats facts from spaFacts (which also carries
+   * grader-only notes), so edit the two together; tests/scenarios.test.ts checks they agree.
+   */
+  priceList: z
+    .array(z.object({ label: z.string().min(1), value: z.string().min(1), note: z.string().min(1).optional() }))
+    .optional(),
   spaFacts: z.array(z.string().min(1)).min(1),
   rubric: z.array(RubricItemSchema).min(1),
 });
